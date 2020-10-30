@@ -1,12 +1,12 @@
 #importing all necessary libraries
-import sys
-sys.path.append("../")
-from ortho_lib import *
-from scipy.stats import entropy
-from scipy.signal import correlate2d
-import pandas as pd
-from scipy.spatial.transform import Rotation as R
-import math
+	import sys
+	sys.path.append("../")
+	from ortho_lib import *
+	from scipy.stats import entropy
+	from scipy.signal import correlate2d
+	import pandas as pd
+	from scipy.spatial.transform import Rotation as R
+	import math
 
 #calculate euler angles from rotation matrice (from dataframe)
 def calculate_euler(x0, x1, x2, y0, y1, y2, z0, z1, z2):
